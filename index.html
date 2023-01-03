@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/arthub.css" />
+
+    <!-- Swiper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/arthub.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+
+    <div class="wrap">
+      <div id="slide" class="img-box" val="1" max="3">
+        <img id="img1" src="./img/index_BG01.jpg" alt="" />
+      </div>
+
+      <!-- header -->
+      <header class="hd">
+        <nav class="hd_inner">
+          <!-- logo -->
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt="logo"
+          /></a>
+          <!-- right nav -->
+          <div class="inner_right">
+            <form action="/search.html" method="get" class="search_box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="search"
+                type="text"
+                placeholder="    Search for products, scents, sample"
+              />
+            </form>
+            <div class="right_menu">
+              <div class="icons">
+                <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="mem">Membership</a>
+              </div>
+              <div class="lang">
+                <button>Korean</button>
+                <ul class="dropdown">
+                  <li><a href="#">Korean</a></li>
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Chinese</a></li>
+                </ul>
+                <div class="dropdown_icons">
+                  <i class="fa-solid fa-sort-up"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- inner -->
+            <div class="inner_wrap">
+              <ul class="gnb">
+                <li>
+                  <a href="#">ART AND ARTISTS</a>
+                  <ul class="sub">
+                    <li><a href="#">sub_menu1</a></li>
+                    <li><a href="#">sub_menu2</a></li>
+                    <li><a href="#">sub_menu3</a></li>
+                    <li><a href="#">sub_menu4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">ARCHIVE</a>
+                  <ul class="sub">
+                    <li><a href="#">sub_menu1</a></li>
+                    <li><a href="#">sub_menu2</a></li>
+                    <li><a href="#">sub_menu3</a></li>
+                    <li><a href="#">sub_menu4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">ART STORE</a>
+                  <ul class="sub">
+                    <li><a href="#">sub_menu1</a></li>
+                    <li><a href="#">sub_menu2</a></li>
+                    <li><a href="#">sub_menu3</a></li>
+                    <li><a href="#">sub_menu4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">NEWS</a>
+                  <ul class="sub">
+                    <li><a href="#">sub_menu1</a></li>
+                    <li><a href="#">sub_menu2</a></li>
+                    <li><a href="#">sub_menu3</a></li>
+                    <li><a href="#">sub_menu4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">ABOUT</a>
+                  <ul class="sub">
+                    <li><a href="#">sub_menu1</a></li>
+                    <li><a href="#">sub_menu2</a></li>
+                    <li><a href="#">sub_menu3</a></li>
+                    <li><a href="#">sub_menu4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end inner_right -->
+        </nav>
+      </header>
+
+      <!-- sec1 -->
+      <section class="sec1">
+        <h1>Monthly List</h1>
+        <div class="swiper list_con">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="sub.html"
+                ><img src="./img/Monthly-List01.jpg" alt=""
+              /></a>
+              <p>Lee Chaeyeon Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 20 ~ 2023. 01. 16</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List02.jpg" alt="" />
+              <p>Macki Solo Exhibition :: Embroidery</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 05 ~ 2022. 12. 31</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List03.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List05_02.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List06_2.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List07_2.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List08_2.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List09_2.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List10_2.jpg" alt="" />
+              <p>Yeo Inyoung Solo Exhibition :: Painting</p>
+              <p>Sugary escape - 맥키展</p>
+              <p>2022. 12. 27 ~ 2023. 01. 23</p>
+            </div>
+          </div>
+        </div>
+        <div class="next1"></div>
+        <div class="prev1"></div>
+
+        <!-- slide sub -->
+        <div thumbsSlider="" class="swiper list_sub">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List01.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List05_02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List06_2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List07_2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List08_2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List09_2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Monthly-List10_2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sec2 -->
+      <section class="sec2">
+        <h1>Contest</h1>
+        <div class="sec2_wrap">
+          <div class="contest_con">
+            <div class="con_list">
+              <div class="left_day">
+                <p>28</p>
+                <p>Nov.MON</p>
+              </div>
+              <div class="day_dec">
+                <p>2023 사이아트 도큐먼트 전시평론 지원 프로그램 작가공모</p>
+                <p>
+                  사이아트는 한국 현대미술의 새로운 경향을 선도할 작가를 매년
+                  공모를 통해 선발하며 기획하는 프로그램에 따라 개인의 작품을
+                  전시
+                </p>
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="con_list">
+              <div class="left_day">
+                <p>05</p>
+                <p>Dec.MON</p>
+              </div>
+              <div class="day_dec">
+                <p>쿤스트하우스 아르테리 2023 상반기 전시작품 공모</p>
+                <p>
+                  Kunsthaus Arterie 쿤스트하우스 아르테리는 '예술의 공간 - 동맥'
+                  이라는 뜻의 독일어로 된 이름처럼 생명력 있는 예술 작품이 일상
+                  속 깊게 들어간, 강하게 살아있는 새 Art scene을 창조하기 위해
+                  만들어진 예술
+                </p>
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="con_list">
+              <div class="left_day">
+                <p>16</p>
+                <p>Dec.FRI</p>
+              </div>
+              <div class="day_dec">
+                <p>제 4회 N646갤러리카페 신진작가 공모</p>
+                <p>
+                  (주)포엔식스의 N646 COLLECTIVE에서 운영 중인 갤러리 카페
+                  n646은 작품 전시 및 판매가 가능한 공간으로 작가님들의 활동에
+                  도움이 되고자 전시공간을 무료로 지원
+                </p>
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="con_list">
+              <div class="left_day">
+                <p>22</p>
+                <p>Dec.THU</p>
+              </div>
+              <div class="day_dec">
+                <p>2023 갤러리 H.아트브릿지 창작지원 공모 상반기</p>
+                <p>
+                  작가로서 작업에 대한 열망이 가득하고, 좋은 작품을 만들고
+                  싶다는 욕구가 강하고, 현재도 작업을 열심히 하고 있으며, 전시를
+                  통해 자신의 작품을 정말 절실하게 보여주고 싶은 작가님
+                </p>
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+          </div>
+
+          <!-- calendar -->
+          <div class="right_con">
+            <div class="date-wrap">
+              <div class="date-month">
+                <span id="month-this">2022.05</span>
+                <div class="button_wrap">
+                  <button
+                    type="button"
+                    id="month-prev"
+                    class="month-move"
+                    data-ym="2022-04-01"
+                  >
+                    prev
+                  </button>
+                  <button
+                    type="button"
+                    id="month-next"
+                    class="month-move"
+                    data-ym="2022-06-01"
+                  >
+                    next
+                  </button>
+                </div>
+              </div>
+              <table class="date-month">
+                <span>January</span>
+                <thead>
+                  <tr>
+                    <th>일</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                    <th>토</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="prev-month">26</td>
+                    <td class="prev-month">27</td>
+                    <td class="prev-month">28</td>
+                    <td class="prev-month">29</td>
+                    <td class="prev-month">30</td>
+                    <td class="prev-month">31</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td class="event">10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="event">21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td class="current-day event">23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td class="next-month">1</td>
+                    <td class="next-month">2</td>
+                    <td class="next-month">3</td>
+                    <td class="next-month">4</td>
+                    <td class="next-month">5</td>
+                    <td class="next-month">6</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- end calendar -->
+
+            <div class="check_list">
+              <h2>Checkbox</h2>
+              <p>
+                <input type="checkbox" id="check1" />
+                <label for="check1">All</label>
+              </p>
+              <p>
+                <input type="checkbox" id="check2" />
+                <label for="check2">Event</label>
+              </p>
+              <p>
+                <input type="checkbox" id="check3" />
+                <label for="check3">Contest</label>
+              </p>
+              <p>
+                <input type="checkbox" id="check4" class="right" />
+                <label for="check4">Exhibition</label>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sec3 -->
+      <section class="sec3">
+        <h1>Art & Ideas</h1>
+        <article class="tab_con">
+          <!-- Tab01 -->
+          <button type="button" class="btn1 on">NEWS</button>
+          <article class="btn_con1">
+            <div class="list_01">
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas01.jpg" alt="" />
+                <img src="./img/Art-&-Ideas01_2.jpg" alt="" />
+              </div>
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas02.jpg" alt="" />
+                <img src="./img/Art-&-Ideas02_2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="list_02">
+              <img src="./img/Art-&-Ideas03.jpg" alt="" />
+              <div class="txt_con">
+                <p>30+1: 떠오르도록 :: Various</p>
+                <p>2022-12-20 ~ 2023-05-07</p>
+                <p>30+1개의 잇는 마음이 떠오르도록</p>
+                <p>
+                  잇는 마음은 시간을 타고 물결이 되어, 지금 여기 청계천을 따라
+                  흐르고 있습니다. 조심스레 쌓아 온 것들이 <br />
+                  하나 둘 무너져 내리는 순간에도, 잇는 마음들은 의연하게 팔과
+                  어깨를 걸고 당연하다는 듯 앞으로 나섭니다. <br />
+                  1970년대, 나와 가족을 살리기 위한 노동이 갖은 천대와 멸시에
+                  시달리던 때, 노동자는 뭉치는 것 말고는 아무것도 할 수 없...
+                </p>
+                <a href="#"><span>+</span> VIEW MORE</a>
+              </div>
+            </div>
+            <div class="list_last">
+              <div class="list_03">
+                <ul>
+                  <li><img src="./img/Art-&-Ideas04.jpg" alt="" /></li>
+                  <li><img src="./img/Art-&-Ideas04_2.jpg" alt="" /></li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src="./img/Art-&-Ideas05.jpg" alt="" />
+                    <p>국립현대미술관</p>
+                    <p>
+                      국립현대미술관 2023년 주요 전시 공개, <br />
+                      장욱진·김구림 개인전 개최
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="list_04">
+                <img src="./img/Art-&-Ideas06.jpg" alt="" />
+                <img src="./img/Art-&-Ideas06_02.jpg" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Tab02 -->
+          <button type="button" class="btn2">ARTIST</button>
+          <article class="btn_con1" style="background-color: #f5f5f5">
+            <div class="list_01">
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas01.jpg" alt="" />
+                <img src="./img/Art-&-Ideas01_2.jpg" alt="" />
+              </div>
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas02.jpg" alt="" />
+                <img src="./img/Art-&-Ideas02_2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="list_02">
+              <img src="./img/Art-&-Ideas03.jpg" alt="" />
+              <div class="txt_con">
+                <p>30+1: 떠오르도록 :: Various</p>
+                <p>2022-12-20 ~ 2023-05-07</p>
+                <p>30+1개의 잇는 마음이 떠오르도록</p>
+                <p>
+                  잇는 마음은 시간을 타고 물결이 되어, 지금 여기 청계천을 따라
+                  흐르고 있습니다. 조심스레 쌓아 온 것들이 <br />
+                  하나 둘 무너져 내리는 순간에도, 잇는 마음들은 의연하게 팔과
+                  어깨를 걸고 당연하다는 듯 앞으로 나섭니다. <br />
+                  1970년대, 나와 가족을 살리기 위한 노동이 갖은 천대와 멸시에
+                  시달리던 때, 노동자는 뭉치는 것 말고는 아무것도 할 수 없...
+                </p>
+                <a href="#"><span>+</span> VIEW MORE</a>
+              </div>
+            </div>
+            <div class="list_last">
+              <div class="list_03">
+                <ul>
+                  <li><img src="./img/Art-&-Ideas04.jpg" alt="" /></li>
+                  <li><img src="./img/Art-&-Ideas04_2.jpg" alt="" /></li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src="./img/Art-&-Ideas05.jpg" alt="" />
+                    <p>국립현대미술관</p>
+                    <p>
+                      국립현대미술관 2023년 주요 전시 공개, <br />
+                      장욱진·김구림 개인전 개최
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="list_04">
+                <img src="./img/Art-&-Ideas06.jpg" alt="" />
+                <img src="./img/Art-&-Ideas06_02.jpg" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Tab03 -->
+          <button type="button" class="btn3">GALLERY</button>
+          <article class="btn_con1">
+            <div class="list_01">
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas01.jpg" alt="" />
+                <img src="./img/Art-&-Ideas01_2.jpg" alt="" />
+              </div>
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas02.jpg" alt="" />
+                <img src="./img/Art-&-Ideas02_2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="list_02">
+              <img src="./img/Art-&-Ideas03.jpg" alt="" />
+              <div class="txt_con">
+                <p>30+1: 떠오르도록 :: Various</p>
+                <p>2022-12-20 ~ 2023-05-07</p>
+                <p>30+1개의 잇는 마음이 떠오르도록</p>
+                <p>
+                  잇는 마음은 시간을 타고 물결이 되어, 지금 여기 청계천을 따라
+                  흐르고 있습니다. 조심스레 쌓아 온 것들이 <br />
+                  하나 둘 무너져 내리는 순간에도, 잇는 마음들은 의연하게 팔과
+                  어깨를 걸고 당연하다는 듯 앞으로 나섭니다. <br />
+                  1970년대, 나와 가족을 살리기 위한 노동이 갖은 천대와 멸시에
+                  시달리던 때, 노동자는 뭉치는 것 말고는 아무것도 할 수 없...
+                </p>
+                <a href="#"><span>+</span> VIEW MORE</a>
+              </div>
+            </div>
+            <div class="list_last">
+              <div class="list_03">
+                <ul>
+                  <li><img src="./img/Art-&-Ideas04.jpg" alt="" /></li>
+                  <li><img src="./img/Art-&-Ideas04_2.jpg" alt="" /></li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src="./img/Art-&-Ideas05.jpg" alt="" />
+                    <p>국립현대미술관</p>
+                    <p>
+                      국립현대미술관 2023년 주요 전시 공개, <br />
+                      장욱진·김구림 개인전 개최
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="list_04">
+                <img src="./img/Art-&-Ideas06.jpg" alt="" />
+                <img src="./img/Art-&-Ideas06_02.jpg" alt="" />
+              </div>
+            </div>
+          </article>
+
+          <!-- Tab04 -->
+          <button type="button" class="btn4">E-BOOK</button>
+          <article class="btn_con1" style="background-color: #f5f5f5">
+            <div class="list_01">
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas01.jpg" alt="" />
+                <img src="./img/Art-&-Ideas01_2.jpg" alt="" />
+              </div>
+              <div class="list_img02">
+                <img src="./img/Art-&-Ideas02.jpg" alt="" />
+                <img src="./img/Art-&-Ideas02_2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="list_02">
+              <img src="./img/Art-&-Ideas03.jpg" alt="" />
+              <div class="txt_con">
+                <p>30+1: 떠오르도록 :: Various</p>
+                <p>2022-12-20 ~ 2023-05-07</p>
+                <p>30+1개의 잇는 마음이 떠오르도록</p>
+                <p>
+                  잇는 마음은 시간을 타고 물결이 되어, 지금 여기 청계천을 따라
+                  흐르고 있습니다. 조심스레 쌓아 온 것들이 <br />
+                  하나 둘 무너져 내리는 순간에도, 잇는 마음들은 의연하게 팔과
+                  어깨를 걸고 당연하다는 듯 앞으로 나섭니다. <br />
+                  1970년대, 나와 가족을 살리기 위한 노동이 갖은 천대와 멸시에
+                  시달리던 때, 노동자는 뭉치는 것 말고는 아무것도 할 수 없...
+                </p>
+                <a href="#"><span>+</span> VIEW MORE</a>
+              </div>
+            </div>
+            <div class="list_last">
+              <div class="list_03">
+                <ul>
+                  <li><img src="./img/Art-&-Ideas04.jpg" alt="" /></li>
+                  <li><img src="./img/Art-&-Ideas04_2.jpg" alt="" /></li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src="./img/Art-&-Ideas05.jpg" alt="" />
+                    <p>국립현대미술관</p>
+                    <p>
+                      국립현대미술관 2023년 주요 전시 공개, <br />
+                      장욱진·김구림 개인전 개최
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="list_04">
+                <img src="./img/Art-&-Ideas06.jpg" alt="" />
+                <img src="./img/Art-&-Ideas06_02.jpg" alt="" />
+              </div>
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="foot_top">
+          <nav>
+            <ul class="foot_gnb">
+              <li>
+                <a href="#">About</a>
+                <ul class="foot_sub">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Collection</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Art & Design</a>
+                <ul class="foot_sub">
+                  <li><a href="#">Objects</a></li>
+                  <li><a href="#">VR Gallery</a></li>
+                  <li><a href="#">Book Package</a></li>
+                  <li><a href="#">Art Job</a></li>
+                  <li><a href="#">Art Critic</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Visit</a>
+                <ul class="foot_sub">
+                  <li><a href="#">Store Locator</a></li>
+                  <li><a href="#">Group Visits</a></li>
+                  <li><a href="#">In-Store Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Client Care</a>
+                <ul class="foot_sub">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Curation</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="email">
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <span>Join our newsletter</span>
+              <p>You may unsubscribe anytime.<a href="#">Contact Us.</a></p>
+              <form class="foot_search">
+                <input
+                  class="address_box"
+                  type="text"
+                  placeholder="Enter your email address"
+                />
+              </form>
+              <div class="sign">
+                <p><a href="#">sign up</a></p>
+                <p>
+                  By clicking OK, I agree to the Terms and Conditions and the
+                  Privacy Policy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sns_icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <!-- end foot_top -->
+
+        <div class="foot_bottom">
+          <p>예술과아카이브 | 사업자등록번호 : 314-20-75752 | 02-2654-7138</p>
+          <p>Email : arthub2@naver.com 개인정보취급방침</p>
+          <p>Copyright ⓒ ARTHUB. All Rights Reserved</p>
+        </div>
+        <!-- end foot_bottom -->
+      </footer>
+    </div>
+  </body>
+</html>
